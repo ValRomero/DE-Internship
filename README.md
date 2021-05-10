@@ -47,16 +47,16 @@ $ python run.py
 
 #### Docker
 
-To build an image type in the cpmmand line:
+To build an image type in the command line:
 
 ```
 $ docker build --rm -t app .
 ```
 
-To run type next to the command line.
+To run, type next to the command line:
 
 ```
-docker run --rm -v <path to DB>:/db -e DATABASE_URL=sqlite:////db/database.db
+$ docker run --rm -v <path to DB>:/db -e DATABASE_URL=sqlite:////db/database.db
 ```
 
 Where `<path to DB>` is local path to sqlight db folder.
