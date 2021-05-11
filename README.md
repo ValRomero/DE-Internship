@@ -1,4 +1,4 @@
-# Application for Data Engineer Internship (MacPaw Summer Internship 2021)
+# Application for Data Engineer Internship [(MacPaw Summer Internship 2021)] (https://github.com/MacPaw/msi2021-data-engineering)
 
 Application downloads data_list.data file from AWS S3 bucket every 5 min. It checks data_list's header for Last Modified and compare it with variable date. In case they don't match, program compares JSON file names from data_list with table catalogue. If there are new files, their names are saved to catalogue and used to download JSON files from AWS S3 bucket.
 
