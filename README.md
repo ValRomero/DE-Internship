@@ -1,4 +1,4 @@
-# Application for Data Engineer Internship (MacPaw Summer Internship 2021)
+# Application for Data Engineer Internship
 
 Application downloads data_list.data file from AWS S3 bucket every 5 min. It checks data_list's header for Last Modified and compare it with variable date. In case they don't match, program compares JSON file names from data_list with table catalogue. If there are new files, their names are saved to catalogue and used to download JSON files from AWS S3 bucket.
 
@@ -56,7 +56,7 @@ $ docker build --rm -t app .
 To run, type next to the command line:
 
 ```
-$ docker run --rm -v <path to DB>:/db -e DATABASE_URL=sqlite:////db/database.db
+$ docker run --rm -v <path to DB>:/db -e DATABASE_URL=sqlite:////db/database.db app
 ```
 
 Where `<path to DB>` is local path to sqlight db folder.
